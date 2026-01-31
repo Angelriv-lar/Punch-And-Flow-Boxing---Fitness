@@ -1,0 +1,118 @@
+/* =========================================
+   Responsive Layout Tweaks
+   Breakpoints:
+   - 1200px: tablet/small laptop
+   - 800px : large phones/tablets
+   - 600px : phones
+   ========================================= */
+
+/* ====== Up to 1200px (tablet) ====== */
+@media (max-width: 1200px) {
+  /* Profile layout: stack image + text */
+  #profile {
+    display: block;
+    margin: 0 5%;
+  }
+
+  .section__pic-container {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .section__text {
+    text-align: center;
+  }
+
+  .btn-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  /* Video hero: keep it tall enough but not huge */
+  .video-hero {
+    height: 60vh;
+    min-height: 360px;
+    border-radius: 14px;
+  }
+
+  /* Benefits + Sessions: grids should stack nicely */
+  .benefits-list,
+  .sessions {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-box {
+    padding: 1.5rem;
+    margin: 1.5rem auto 0;
+  }
+}
+
+/* ====== Up to 800px (large phones / small tablets) ====== */
+@media (max-width: 800px) {
+  /* Reduce section padding if you have big spacing */
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-overlay h2 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+  }
+
+  .benefits-title {
+    font-size: clamp(1.6rem, 5vw, 2.3rem);
+  }
+}
+
+/* ====== Up to 600px (phones) ====== */
+@media (max-width: 600px) {
+  /* Make headings readable without being huge */
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.15rem;
+  }
+
+  /* Image container should not force weird heights */
+  .section__pic-container {
+    width: min(260px, 70vw);
+    height: min(260px, 70vw);
+  }
+
+  /* Video hero: shorter on phones */
+  .video-hero {
+    height: 45vh;
+    min-height: 280px;
+    border-radius: 12px;
+  }
+
+  /* Mission text box: tighter */
+  .mission-box {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  /* Cards: reduce padding */
+  .session-card,
+  .benefits-list li {
+    padding: 1.25rem;
+  }
+
+  /* Modal should fit on phones */
+  .modal-content {
+    width: min(520px, 92vw);
+    height: auto;
+    max-height: 85vh;
+    overflow: auto;
+  }
+
+  /* Don't justify body text on phones (creates awkward gaps) */
+  .text-container,
+  .mission-box {
+    text-align: left;
+  }
+}

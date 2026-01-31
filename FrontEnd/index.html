@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Andy Gonzalez - Boxing Coach By Punch And Flow" />
+    <title>Andy Gonzalez • Boxing Coach • Strength • Mobility</title>
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- PROFILE -->
+      <section id="profile" aria-labelledby="profile-title" class="profile">
+        <div class="section__pic-container">
+          <img src="./logos/Background.jpg" alt="Andy Gonzalez" />
+        </div>
+
+        <div class="section__text">
+          <h1 id="profile-title" class="title">Andy Gonzalez</h1>
+          <p class="section__text__p2">Boxing / Fitness Coach</p>
+          <p class="section__text__p1">By Punch And Flow</p>
+          <p class="section__text__p1">South Gate, CA</p>
+
+          <div class="btn-container">
+            <!-- FIX: this opens the modal instead of scrolling -->
+            <button class="btn btn-color-1" id="openBookingTop" type="button">
+              Book Session
+            </button>
+
+            <a class="btn btn-color-1" href="#contact">Contact Info</a>
+          </div>
+
+          <div id="socials-container" aria-label="Social links">
+            <a
+              class="icon-link"
+              href="https://www.instagram.com/agonzalez_o8?igsh=NTc4MTIwNjQ2YQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit my Instagram profile (opens in a new tab)"
+            >
+              <img src="./logos/Instagram.png" alt="Instagram" class="icon" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CREDENTIALS -->
+       <!--
+      <section class="credentials">
+        <h2 class="title">• 10+ Years Of Experience</h2>
+        <br>
+        <h2 class="title">• 100+ Trained Members</h2>
+      </section>
+    -->
+
+      <!-- MISSION -->
+      <section id="mission" aria-labelledby="mission-title" class="reveal">
+        <p class="section__text__p1">Punch And Flow</p>
+        <h1 id="mission-title" class="title">Our Mission</h1>
+
+        <div class="video-hero">
+          <video class="hero-video" autoplay muted loop playsinline>
+            <source src="videos/punching.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="hero-overlay">
+            <h2>Train With Purpose.</h2>
+          </div>
+        </div>
+
+        <!-- FIX: Mission paragraph in a nice box -->
+        <div class="mission-box">
+          <p>
+            There are countless ways to train, but boxing demands everything — strength, speed,
+            balance, focus, and grit. That’s why my coaching goes beyond just throwing punches.
+            I combine boxing fundamentals, strength & conditioning, yoga, and mobility into
+            intelligent full-body sessions that build real athleticism, not just aesthetics.
+          </p>
+
+          <p>
+            You’ll move better, hit harder, and feel more connected to your body. Whether your
+            goal is performance, confidence, or longevity, every session is designed to challenge
+            you, sharpen you, and push you forward.
+          </p>
+
+          <p>
+            This isn’t just a workout. It’s training with intention, one punch at a time. That’s
+            Punch And Flow.
+          </p>
+        </div>
+      </section>
+
+      <!-- PHILOSOPHY / BENEFITS -->
+      <section class="reveal">
+        <div class="video-hero">
+          <video class="hero-video" autoplay muted loop playsinline>
+            <source src="videos/punching2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="hero-overlay">
+            <h2>Take Training To The Next Level</h2>
+          </div>
+        </div>
+
+        <section class="benefits" aria-labelledby="benefits-title">
+          <h2 id="benefits-title" class="benefits-title">Improve Your Life</h2>
+
+          <ul class="benefits-list" role="list">
+            <li>
+              <h3>Confidence</h3>
+              <p>Build real confidence through disciplined training and measurable progress.</p>
+            </li>
+            <li>
+              <h3>Physical Strength</h3>
+              <p>Develop full-body strength, speed, and endurance that carries into everyday life.</p>
+            </li>
+            <li>
+              <h3>Mental Toughness</h3>
+              <p>Sharpen focus, reduce stress, and train your mind to stay calm under pressure.</p>
+            </li>
+            <li>
+              <h3>Mobility & Longevity</h3>
+              <p>Move better, recover faster, and protect your body for long-term performance.</p>
+            </li>
+            <li>
+              <h3>Purposeful Training</h3>
+              <p>Every session has intention — no wasted reps, no random workouts.</p>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- SESSIONS -->
+      <section class="sessions" aria-labelledby="sessions-title">
+        <h2 id="sessions-title" class="title">Sessions & Availability</h2>
+        <p id="sessions-title">First Class is FREE!</p>
+        <p>Choose a time, then pay online or select pay in person (Cash, Zelle, etc.).</p>
+
+        <div class="session-card">
+          <h3>Private Sessions</h3>
+          <p class="price">1 Hour · $60</p>
+          <p class="time">Daily · 7:00 AM – 7:00 PM</p>
+        </div>
+
+        <div class="session-card">
+          <h3>Group Sessions</h3>
+          <p class="price">1 Hour · $30</p>
+          <p class="time">Tuesday–Thursday · 5:00 PM – 7:00 PM</p>
+        </div>
+
+        <div class="session-card">
+          <h3>Subscription</h3>
+          <p class="price">4 Sessions / Month · $120</p>
+          <p class="time">Flexible Scheduling</p>
+        </div>
+
+        <div class="button-center">
+          <button class="cta-btn" id="openBooking" type="button">Book a Session</button>
+        </div>
+      </section>
+
+      <!-- BOOKING MODAL -->
+      <div class="modal" id="bookingModal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+          <button class="modal-close" id="closeBooking" aria-label="Close">×</button>
+
+          <h3 id="booking-title">Book Your Session</h3>
+          <p>REMINDER: Only In South Gate, CA.</p>
+
+          <a class="cta-btn" href="YOUR_SQUARE_BOOKING_LINK" target="_blank" rel="noopener">
+            Continue to Booking
+          </a>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <section id="contact" aria-labelledby="contact-title" class="reveal">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 id="contact-title" class="title">Contact Me</h1>
+
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./logos/email.png"
+              alt=""
+              class="icon contact-icon email-icon"
+              aria-hidden="true"
+            />
+            <p><a href="mailto:exampleemail@gmail.com">agonzalez00008@gmail.com</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &#169; <span id="year">2026</span> Andy Gonzalez. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
